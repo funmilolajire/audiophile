@@ -1,0 +1,85 @@
+.container {
+    margin-top: auto; //TODO remove
+    background: #101010;
+    width: 100vw;
+    padding: 7.5rem 16.5rem 4.8rem;
+    color: #fff;
+
+    &>div:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3.6rem;
+
+        .logoDiv {
+            display: flex;
+            align-items: center;
+
+            div:first-child {
+                height: 2.5rem;
+                width: 14.3rem;
+            }
+        }
+
+        nav {
+            font-weight: 700;
+            font-size: 1.3rem;
+            line-height: 2.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 3.4rem;
+
+            span.active {
+                color: #d87d4a;
+            }
+
+            span:hover {
+                color: #d87d4a;
+                cursor: pointer;
+            }
+        }
+    }
+
+    div:nth-child(2) {
+        margin-bottom: 5.6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: relative;
+
+        p {
+            width: 45%;
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            opacity: 0.5;
+        }
+
+        .iconsDiv {
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            padding-bottom: 1.5rem;
+            display: flex;
+            gap: 1.6rem;
+            font-size: 2.4rem;
+
+            span:hover {
+                color: #d87d4a;
+                cursor: pointer;
+            }
+        }
+    }
+
+    small {
+        width: 54rem;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        opacity: 0.5;
+    }
+}
