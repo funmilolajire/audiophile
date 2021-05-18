@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import Header from './Header';
+import ScrollToTopButton from './ScrollToTopButton';
 import Footer from './Footer';
 import styles from './styles/layout.module.scss';
 
@@ -9,6 +10,7 @@ const Layout: FC = ({ children }) => (
         <main>
             {children}
         </main>
+        <ScrollToTopButton />
         <Footer />
     </div>
 )
