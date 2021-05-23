@@ -1,6 +1,5 @@
 import { FC } from 'react';
 import Head from 'next/head';
-import _ from 'lodash';
 
 const Meta: FC<Meta> = ({ title, description, keywords }) => (
     <>
@@ -11,7 +10,7 @@ const Meta: FC<Meta> = ({ title, description, keywords }) => (
             <meta httpEquiv="X-UA-Compatible" content="IE=7" />
             <meta name="description" content={description} />
             <meta name="keywords" content={keywords} />
-            <title>Audiophile | {_.upperFirst(title)}</title>
+            <title>Audiophile | {title}</title>
         </Head>
     </>
 )

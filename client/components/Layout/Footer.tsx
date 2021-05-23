@@ -9,7 +9,7 @@ const Footer: FC = () => {
         <footer className={styles.container}>
             <div>
                 <div className={styles.logoDiv}>
-                    <Image src="/assets/shared/desktop/logo.svg" height="100%" width="100%" alt="logo" />
+                    <Image src="/logo.svg" height="100%" width="100%" alt="logo" />
                 </div>
                 <nav>
                     <Link href="/"><span data-link="/">HOME</span></Link>

@@ -1,0 +1,63 @@
+.container {
+    margin-bottom: 16rem;
+    color: #000000;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12.5rem;
+
+    section {
+        h4 {
+            font-weight: 700;
+            font-size: 3.2rem;
+            line-height: 3.6rem;
+            letter-spacing: 1.14286px;
+            text-transform: uppercase;
+            margin-bottom: 3.2rem;
+        }
+
+        &.features {
+            width: 60%;
+
+            h4 {}
+
+            p {
+                font-weight: 500;
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+                opacity: 0.5;
+            }
+        }
+
+        &.boxcontents {
+            width: 40%;
+
+            h4 {}
+
+            &>div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 0.8rem;
+
+                .item {
+                    display: flex;
+                    gap: 2.1rem;
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
+
+                    .number {
+                        font-weight: 700;
+                        color: #D87D4A;
+                    }
+
+                    .itemname {
+                        font-weight: 500;
+                        opacity: 0.5;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+}

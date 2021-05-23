@@ -3,8 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     right: 2rem;
     bottom: 1rem;
     z-index: 1000;
@@ -15,10 +15,11 @@
         transition: all 0.5s ease;
         opacity: 0.5;
         cursor: pointer;
+        color: #d87d4a;
 
         &:hover {
             opacity: 1;
-            transform: translateY(1rem)
+            transform: translateY(-1rem)
         }
     }
 }

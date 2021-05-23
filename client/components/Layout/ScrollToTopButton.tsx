@@ -1,5 +1,5 @@
-import { useLayoutEffect, useCallback, useState, FC } from 'react';
-import { IoChevronUpCircle } from 'react-icons/io5';
+import { useEffect, useCallback, useState, FC } from 'react';
+import { IoChevronUpCircleSharp } from 'react-icons/io5';
 import styles from './styles/scrollToTopButton.module.scss';
 
 const ScrollToTopButton: FC = () => {
@@ -24,7 +24,7 @@ const ScrollToTopButton: FC = () => {
         })
     }
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         window.addEventListener('scroll', checkScrollTop)
         return () => {
             window.removeEventListener('scroll', checkScrollTop)
@@ -33,7 +33,7 @@ const ScrollToTopButton: FC = () => {
 
     return (
         <span className={styles.container} title="scroll to top" aria-label="scroll to top">
-            <IoChevronUpCircle className={styles.scrollToTopButton} role="button" style={buttonStyle} onClick={scrollTop} />
+            <IoChevronUpCircleSharp className={styles.scrollToTopButton} role="button" style={buttonStyle} onClick={scrollTop} />
         </span>
     )
 }
