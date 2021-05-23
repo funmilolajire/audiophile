@@ -10,11 +10,11 @@ const Product: FC<CategoryProduct & { index: number }> = ({ index, ...props }) =
     }
     return (
         <div className={styles.container} style={{ flexDirection: getStyle() }}>
-            <picture>
+            {props.categoryThumbnails && <picture>
                 <source media="(max-width: 590px)" srcSet={props.categoryThumbnails.mobile} />
                 <source media="(max-width: 900px)" srcSet={props.categoryThumbnails.tablet} />
                 <img src={props.categoryThumbnails.desktop} alt="category-product" />
-            </picture>
+            </picture>}
             <section>
                 {props.new && <span>new product</span>}
                 <h3>{props.name}</h3>
