@@ -7,7 +7,7 @@ interface Product {
     name: string;
     image: Image;
     category: string;
-    "category-thumbnails": Image;
+    categoryThumbnails: Image;
     new: boolean;
     price: number;
     description: string;

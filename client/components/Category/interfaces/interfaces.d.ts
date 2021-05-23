@@ -10,7 +10,7 @@ interface CategoryProducts {
 
 interface CategoryProduct {
     id?: string;
-    "category-thumbnails": {
+    categoryThumbnails: {
         mobile: string;
         tablet: string;
         desktop: string;

@@ -8,7 +8,7 @@
       "desktop": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621238417/audiophile/products/product-yx1-earphones/desktop/image-product_yegdq3.jpg"
     },
     "category": "earphones",
-    "category-thumbnails": {
+    "categoryThumbnails": {
       "mobile": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621237565/audiophile/categories/earphones/mobile/image-yx1-earphones_uzyqhs.jpg",
       "tablet": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621237595/audiophile/categories/earphones/tablet/image-yx1-earphones_jprqan.jpg",
       "desktop": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621237615/audiophile/categories/earphones/desktop/image-yx1-earphones_wfsjmt.jpg"
@@ -94,7 +94,7 @@
       "desktop": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621238009/audiophile/products/product-xx59-headphones/desktop/image-product_jq628e.jpg"
     },
     "category": "headphones",
-    "category-thumbnails": {
+    "categoryThumbnails": {
       "mobile": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621237463/audiophile/categories/headphones/mobile/image-xx59_evsck3.jpg",
       "tablet": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621237488/audiophile/categories/headphones/tablet/image-xx59_pjcstt.jpg",
       "desktop": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621237511/audiophile/categories/headphones/desktop/image-xx59_yfq9gp.jpg"
@@ -176,7 +176,7 @@
       "desktop": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621238154/audiophile/products/product-xx99-mark-one-headphones/desktop/image-product_tkesgj.jpg"
     },
     "category": "headphones",
-    "category-thumbnails": {
+    "categoryThumbnails": {
       "mobile": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621237464/audiophile/categories/headphones/mobile/image-xx99-mark-one_zckfzd.jpg",
       "tablet": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621237489/audiophile/categories/headphones/tablet/image-xx99-mark-one_ai5uho.jpg",
       "desktop": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621237512/audiophile/categories/headphones/desktop/image-xx99-mark-one_hm66jj.jpg"
@@ -258,7 +258,7 @@
       "desktop": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621238310/audiophile/products/product-xx99-mark-two-headphones/desktop/image-product_owbz45.jpg"
     },
     "category": "headphones",
-    "category-thumbnails": {
+    "categoryThumbnails": {
       "mobile": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621237464/audiophile/categories/headphones/mobile/image-xx99-mark-two_xr6rvg.jpg",
       "tablet": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621237490/audiophile/categories/headphones/tablet/image-xx99-mark-two_q5tg2f.jpg",
       "desktop": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621237513/audiophile/categories/headphones/desktop/image-xx99-mark-two_ix2bxy.jpg"
@@ -344,7 +344,7 @@
       "desktop": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621238549/audiophile/products/product-zx7-speaker/desktop/image-product_csunzt.jpg"
     },
     "category": "speakers",
-    "category-thumbnails": {
+    "categoryThumbnails": {
       "mobile": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621237362/audiophile/categories/speakers/mobile/image-zx7_akz15l.jpg",
       "tablet": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621237405/audiophile/categories/speakers/tablet/image-zx7_tmbq4y.jpg",
       "desktop": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621237383/audiophile/categories/speakers/desktop/image-zx7_mlzmnu.jpg"
@@ -430,7 +430,7 @@
       "desktop": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621238663/audiophile/products/product-zx9-speaker/desktop/image-product_dlnezo.jpg"
     },
     "category": "speakers",
-    "category-thumbnails": {
+    "categoryThumbnails": {
       "mobile": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621237362/audiophile/categories/speakers/mobile/image-zx9_apredp.jpg",
       "tablet": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621237406/audiophile/categories/speakers/tablet/image-zx9_eeetes.jpg",
       "desktop": "https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621237384/audiophile/categories/speakers/desktop/image-zx9_epnjva.jpg"
