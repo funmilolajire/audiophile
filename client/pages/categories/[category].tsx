@@ -32,7 +32,11 @@ export const getStaticProps: GetStaticProps = async (context) => {
                 id: product.id,
                 name: product.name,
                 new: product.new,
-                categoryThumbnails: { ...product.categoryThumbnails },
+                categoryThumbnails: {
+                    mobile: product.categoryThumbnails.mobile,
+                    tablet: product.categoryThumbnails.tablet,
+                    desktop: product.categoryThumbnails.desktop
+                },
                 description: product.description,
                 slug: product.slug
             }))

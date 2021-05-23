@@ -42,6 +42,10 @@ a {
   text-decoration: none;
 }
 
+.page-progress-bar {
+  z-index: 50000;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
