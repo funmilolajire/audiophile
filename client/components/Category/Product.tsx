@@ -8,7 +8,6 @@ const Product: FC<CategoryProduct & { index: number }> = ({ index, ...props }) =
         const flexDirection = index !== 0 && index % 2 !== 0 ? "row-reverse" : undefined
         return flexDirection
     }
-    // const categoryThumbnails = JSON.parse(props.categoryThumbnails)
     return (
         <div className={styles.container} style={{ flexDirection: getStyle() }}>
             {props.categoryThumbnails && <picture>
