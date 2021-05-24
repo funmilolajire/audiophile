@@ -8,6 +8,7 @@ import { GetStaticProps, GetStaticPaths } from 'next';
 const category: FC<CategoryProducts> = ({ categoryProducts }) => {
     const router = useRouter()
     const category = router.query.category
+    console.log(categoryProducts.map(product => product.categoryThumbnails))
     const metaOptions = {
         title: "Category - " + _.capitalize("" + category),
         keywords: "music, audiophile,category, frontendmentor, funmilolajire, ecommerce, " + category,
@@ -28,18 +29,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     const categoryProducts = products.filter((product) => product.category === category)
     return {
         props: {
-            categoryProducts: categoryProducts.map(product => ({
-                id: product.id,
-                name: product.name,
-                new: product.new,
-                categoryThumbnails: {
-                    mobile: product.categoryThumbnails.mobile,
-                    tablet: product.categoryThumbnails.tablet,
-                    desktop: product.categoryThumbnails.desktop
-                },
-                description: product.description,
-                slug: product.slug
-            }))
+            categoryProducts
         }
     }
 }
