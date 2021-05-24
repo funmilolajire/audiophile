@@ -28,7 +28,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     const categoryProducts = products.filter((product) => product.category === category)
     return {
         props: {
-            categoryProducts: [...categoryProducts].map(product => ({
+            categoryProducts: categoryProducts.map(product => ({
                 id: product.id,
                 name: product.name,
                 new: product.new,
