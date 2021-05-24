@@ -4,13 +4,19 @@ import DetailTop from './DetailTop';
 import Features from './Features';
 import Gallery from './Gallery';
 import Others from './Others';
-const Main = () => {
+import { FC } from 'react';
+const Main: FC<Product> = (product) => {
+    const { name, new: is_new, description, price, image } = product
+    console.log(product)
+    const { features, includes } = product
+    const { gallery } = product
+    const { others } = product
     return (
         <>
-            <DetailTop />
-            <Features />
-            <Gallery />
-            <Others />
+            <DetailTop name={name} new={is_new} description={description} price={price} image={image} />
+            <Features features={features} includes={includes} />
+            <Gallery gallery={gallery} />
+            <Others others={others} />
             <Categories />
             <BottomInfo />
         </>

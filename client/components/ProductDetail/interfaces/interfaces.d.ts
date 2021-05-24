@@ -5,9 +5,9 @@ interface Product {
     id?: number;
     slug: string;
     name: string;
-    image: Image;
+    image: productImage;
     category: string;
-    categoryThumbnails: Image;
+    categoryThumbnails: productImage;
     new: boolean;
     price: number;
     description: string;
@@ -17,19 +17,53 @@ interface Product {
         item: string;
     }[];
     gallery: {
-        first: Image;
-        second: Image;
-        third: Image;
-    }
+        first: productImage;
+        second: productImage;
+        third: productImage;
+    };
     others: {
         slug: string;
         name: string;
-        image: Image
+        image: productImage
     }[]
 }
 
-interface Image {
+interface productImage {
     mobile: string;
     tablet: string;
     desktop: string;
+}
+
+interface DetailTop {
+    name: string;
+    new: boolean;
+    description: string;
+    price: number;
+    image: productImage;
+}
+
+interface Features {
+    features: string;
+    includes: {
+        quantity: number;
+        item: string;
+    }[];
+}
+
+interface Gallery {
+    gallery: {
+        first: productImage;
+        second: productImage;
+        third: productImage;
+    }
+}
+
+interface Others {
+    others: OtherItem[]
+}
+
+interface OtherItem {
+    slug: string;
+    name: string;
+    image: productImage
 }

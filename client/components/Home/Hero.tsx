@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import Link from 'next/link'
 import styles from './styles/hero.module.scss';
 
 const Hero: FC = () => {
@@ -13,7 +14,7 @@ const Hero: FC = () => {
                 <span>NEW PRODUCT</span>
                 <h1>XX99 MARK II HEADPHONES</h1>
                 <p>Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
-                <button>SEE PRODUCT</button>
+                <Link href={"/products/" + 'xx99-mark-two-headphones'}><button>SEE PRODUCT</button></Link>
             </section>
         </div>
     )

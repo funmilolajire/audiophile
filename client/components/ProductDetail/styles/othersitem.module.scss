@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4rem;
+
+    picture {
+        width: 100%;
+        background: #F1F1F1;
+        border-radius: 8px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    section {
+        color: #000000;
+        text-align: center;
+
+        h5 {
+            font-weight: 700;
+            font-size: 2.4rem;
+            line-height: 3.3rem;
+            text-align: center;
+            letter-spacing: 1.71429px;
+            text-transform: uppercase;
+            margin-bottom: 3.2rem;
+        }
+
+        button {
+            background: #D87D4A;
+            width: 16rem;
+            height: 4.8rem;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.3rem;
+            line-height: 1.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &:hover {
+                background: #FBAF85;
+            }
+        }
+    }
+}

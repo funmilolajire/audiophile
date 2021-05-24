@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import Link from 'next/link'
 import styles from './styles/productyx1.module.scss';
 
 const ProductYX1: FC = () => {
@@ -11,7 +12,7 @@ const ProductYX1: FC = () => {
             </picture>
             <section>
                 <h3>YX1 earphones</h3>
-                <button>See product</button>
+                <Link href={"/products/" + 'yx1-earphones'}><button>SEE PRODUCT</button></Link>
             </section>
         </div>
     )

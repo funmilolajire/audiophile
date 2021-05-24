@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import Link from 'next/link'
 import styles from './styles/productzx9.module.scss';
 
 const ProductZX9: FC = () => {
@@ -12,7 +13,7 @@ const ProductZX9: FC = () => {
             <section>
                 <h3>zx9 speaker</h3>
                 <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
-                <button>See product</button>
+                <Link href={"/products/" + 'zx9-speaker'}><button>SEE PRODUCT</button></Link>
             </section>
         </div>
     )
