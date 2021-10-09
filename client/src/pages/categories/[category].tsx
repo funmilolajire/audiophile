@@ -1,14 +1,13 @@
 import { FC } from 'react';
 import { useRouter } from 'next/router';
 import _ from 'lodash';
-import Meta from '../../components/Layout/Meta';
+import Meta from '../../components/Meta/Meta';
 import Main from '../../components/Category/Main';
 import { GetStaticProps, GetStaticPaths } from 'next';
 
 const category: FC<CategoryProducts> = ({ categoryProducts }) => {
     const router = useRouter()
     const category = router.query.category
-    console.log(categoryProducts.map(product => product.categoryThumbnails))
     const metaOptions = {
         title: "Category - " + _.capitalize("" + category),
         keywords: "music, audiophile,category, frontendmentor, funmilolajire, ecommerce, " + category,

@@ -1,5 +1,5 @@
 import { useRouter } from "next/router"
-import Meta from "../../components/Layout/Meta"
+import Meta from "../../components/Meta/Meta"
 import Main from "../../components/ProductDetail/Main"
 import _ from 'lodash';
 import { GetStaticPaths, GetStaticProps } from 'next';

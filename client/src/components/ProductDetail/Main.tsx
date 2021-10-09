@@ -7,7 +7,6 @@ import Others from './Others';
 import { FC } from 'react';
 const Main: FC<Product> = (product) => {
     const { name, new: is_new, description, price, image } = product
-    console.log(product)
     const { features, includes } = product
     const { gallery } = product
     const { others } = product

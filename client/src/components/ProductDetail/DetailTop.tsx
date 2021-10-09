@@ -3,7 +3,6 @@ import styles from './styles/detailtop.module.scss'
 import { useRouter } from 'next/router';
 
 const DetailTop: FC<DetailTop> = ({ ...props }) => {
-    console.log({ ...props })
     const router = useRouter()
     const [amount, setAmount] = useState(1)
     const changeAmount = ({ target }: any) => {
