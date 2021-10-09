@@ -1,0 +1,62 @@
+@use 'sass:color';
+
+.container {
+    background: #191919;
+    color: #fff;
+    padding: 0 16.5rem;
+    position: fixed;
+    z-index: 5000;
+    right: 0;
+    left: 0;
+    top: 0;
+
+    &>div {
+        display: flex;
+        align-items: center;
+        padding: 3.2rem 0 3.6rem;
+        border-bottom: 1px solid transparentize($color:#fff, $amount: 0.9);
+
+        .logoDiv {
+            display: flex;
+            align-items: center;
+
+            div:first-child {
+                height: 2.5rem;
+                width: 14.3rem;
+            }
+        }
+
+        nav {
+            margin-left: 16.3%;
+            font-weight: 700;
+            font-size: 1.3rem;
+            line-height: 2.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 3.4rem;
+        }
+
+        span {
+            cursor: pointer;
+        }
+
+        span.active {
+            color: #d87d4a;
+        }
+
+        span:hover {
+            color: #d87d4a;
+        }
+
+        .cartIcon {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            font-size: 2rem;
+        }
+
+    }
+}

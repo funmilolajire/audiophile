@@ -1,0 +1,22 @@
+.container {
+    margin-bottom: 20rem;
+    width: 100%;
+    color: #000000;
+
+    h4 {
+        font-weight: 700;
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+        letter-spacing: 1.14286px;
+        text-transform: uppercase;
+        margin-bottom: 6.4rem;
+        text-align: center;
+    }
+
+    .items {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+}

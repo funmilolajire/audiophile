@@ -1,0 +1,69 @@
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    margin: 0 -16.5rem 20rem;
+
+    picture {
+        grid-area: 1/1/2/2;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    section {
+        color: #fff;
+        grid-area: 1/1/2/2;
+        align-self: flex-end;
+        margin-bottom: 10%;
+        padding-left: 16.5rem;
+        width: 50%;
+
+        span {
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            opacity: 0.5;
+            display: block;
+            margin-bottom: 2.4rem;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 5.6rem;
+            line-height: 5.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 2.4rem;
+        }
+
+        p {
+            width: 70%;
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            opacity: 0.75;
+            margin-bottom: 4rem;
+        }
+
+        button {
+            border: none;
+            background: #d87d4a;
+            width: 16rem;
+            height: 4.8rem;
+            font-weight: bold;
+            font-size: 1.3rem;
+            line-height: 1.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &:hover {
+                background: #fbaf85;
+            }
+        }
+    }
+}
