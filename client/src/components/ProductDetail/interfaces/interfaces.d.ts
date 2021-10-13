@@ -5,6 +5,7 @@ interface Product {
     id?: number;
     slug: string;
     name: string;
+    short?: string;
     image: productImage;
     category: string;
     categoryThumbnails: productImage;
@@ -35,6 +36,7 @@ interface productImage {
 }
 
 interface DetailTop {
+    id?: number;
     name: string;
     new: boolean;
     description: string;

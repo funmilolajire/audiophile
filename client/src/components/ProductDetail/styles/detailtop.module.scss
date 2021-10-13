@@ -135,6 +135,14 @@
                     &:hover {
                         background: #FBAF85;
                     }
+
+                    &:disabled {
+                        background: gray;
+
+                        &:hover {
+                            cursor: not-allowed;
+                        }
+                    }
                 }
             }
         }

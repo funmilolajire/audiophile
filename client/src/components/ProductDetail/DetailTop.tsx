@@ -17,7 +17,22 @@ const DetailTop: FC<DetailTop> = ({ ...props }) => {
     useEffect(() => {
         setAmount(1)
     }, [router.asPath])
-    return (
+
+    const addToCart = () => {
+        const currentCart: { id: number, order_quantity: number }[] = JSON.parse(localStorage.getItem('cart') || '[]')
+        if (props.id && currentCart.map(item => item.id).includes(props.id)) {
+            const itemIndex = currentCart.findIndex(item => item.id === props.id)
+            if (itemIndex !== -1) {
+                currentCart[itemIndex] = { id: props.id, order_quantity: amount }
+            }
+        }
+        else if (props.id) {
+            currentCart.push({ id: props.id, order_quantity: amount })
+        }
+        localStorage.setItem('cart', JSON.stringify(currentCart))
+    }
+    
+     return (
         <div className={styles.container}>
             <button onClick={router.back}>Go Back</button>
             <div className={styles.containerinner}>
@@ -37,7 +52,7 @@ const DetailTop: FC<DetailTop> = ({ ...props }) => {
                             <input onChange={changeAmount} type="text" value={amount} />
                             <button onClick={increment}>+</button>
                         </div>
-                        <button className={styles.addtocart}>Add to cart</button>
+                        <button disabled={amount===0} onClick={addToCart} className={styles.addtocart}>Add to cart</button>
                     </div>
                 </section>
             </div>

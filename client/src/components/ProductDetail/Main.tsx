@@ -6,13 +6,13 @@ import Gallery from './Gallery';
 import Others from './Others';
 import { FC } from 'react';
 const Main: FC<Product> = (product) => {
-    const { name, new: is_new, description, price, image } = product
+    const { id,name, new: is_new, description, price, image } = product
     const { features, includes } = product
     const { gallery } = product
     const { others } = product
     return (
         <>
-            <DetailTop name={name} new={is_new} description={description} price={price} image={image} />
+            <DetailTop id={id} name={name} new={is_new} description={description} price={price} image={image} />
             <Features features={features} includes={includes} />
             <Gallery gallery={gallery} />
             <Others others={others} />
