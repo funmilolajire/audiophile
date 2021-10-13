@@ -1,11 +1,11 @@
-import { FC, useEffect, useRef } from 'react';
+import { FC, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { HiOutlineShoppingCart } from 'react-icons/hi';
 import styles from './styles/header.module.scss';
 
-const Header: FC = () => {
+const Header: FC<SetShowCart> = ({setShowCart}) => {
     const navRef = useRef<HTMLElement>(null)
     const router = useRouter()
     return (
@@ -20,7 +20,7 @@ const Header: FC = () => {
                     <Link href="/categories/speakers"><span className={router.asPath == "/categories/speakers" ? styles.active : ''} data-link="/categories/speakers">SPEAKERS</span></Link>
                     <Link href="/categories/earphones"><span className={router.asPath == "/categories/earphones" ? styles.active : ''} data-link="/categories/earphones">EARPHONES</span></Link>
                 </nav>
-                <span className={styles.cartIcon}><HiOutlineShoppingCart /></span>
+                <span className={styles.cartIcon} onClick={()=>setShowCart((prev:boolean)=>!prev)}><HiOutlineShoppingCart /></span>
             </div>
         </header>
     )
