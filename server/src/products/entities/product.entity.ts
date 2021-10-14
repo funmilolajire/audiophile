@@ -2,8 +2,8 @@ import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
 export class Product{
-    @PrimaryGeneratedColumn()
-    id: number;
+    @PrimaryGeneratedColumn("uuid")
+    id: string;
     
     @Column()
     slug: string;
@@ -12,7 +12,14 @@ export class Product{
     name: string;
 
     @Column()
-    image: string;
+    new: boolean;
+
+    @Column("jsonb")
+    image: {
+            mobile: string,
+            tablet: string,
+            desktop: string,
+    };
 
     @Column()
     short: string;
@@ -20,11 +27,15 @@ export class Product{
     @Column()
     category: string;
 
-    @Column()
-    "category-thumbnails": string;
+    @Column("jsonb")
+    categoryThumbnails: {
+            mobile: string,
+            tablet: string,
+            desktop: string,
+    };
 
-    @Column()
-    price: Number;
+    @Column("money")
+    price: number;
 
     @Column()
     description: string;
@@ -32,12 +43,39 @@ export class Product{
     @Column()
     features: string;
 
-    @Column()
-    includes: string;
+    @Column("jsonb")
+    includes: {
+            quantity: number,
+        item:string
+    }[];
 
-    @Column()
-    gallery: string;
+    @Column("jsonb")
+    gallery: {
+            first: {
+            mobile: string,
+            tablet: string,
+            desktop: string,
+            },
+            second: {
+                mobile: string,
+                tablet: string,
+                desktop: string,
+            },
+            third: {
+                mobile: string,
+                tablet: string,
+                desktop: string,
+            }
+    };
 
-    @Column()
-    others: string;
+    @Column("jsonb")
+    others: {
+            slug: string,
+            name: string,
+            image: {
+                mobile: string,
+                tablet: string,
+                desktop: string,
+        }
+    }[];
 }
