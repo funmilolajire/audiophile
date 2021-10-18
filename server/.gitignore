@@ -2,16 +2,11 @@
 /dist
 /node_modules
 
-#environment variables
-.env.development
-.env.production
-.env.local
-.env
-
 # Logs
 logs
 *.log
 npm-debug.log*
+pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
@@ -38,3 +33,5 @@ lerna-debug.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+/.env
