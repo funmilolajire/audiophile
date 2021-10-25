@@ -4,8 +4,7 @@ const cancelToken = axios.CancelToken
 export const source = cancelToken.source()
 
 export default axios.create({
-    // baseURL: "https://audiophileapi.herokuapp.com/",
-    baseURL: process.env.PRODUCTS_API,
+    baseURL: process.env.NEXT_PUBLIC_PRODUCTS_API,
     headers: {
         "Content-type": "application/json"
     },

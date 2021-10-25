@@ -1,10 +1,10 @@
 import http from '../../../http-common'
 import { AxiosRequestConfig } from 'axios';
 
-export const getCartItemsApi = async (cartIds:number[]) => {
+export const getCartItemsApi = async (cartIds: string[]) => {
     const request: AxiosRequestConfig = {
         method: 'GET',
-        url: "http://localhost:3000/data.json",
+        url: "/products",
         headers: {
             "Content-Type": "application/json",
         },
@@ -26,8 +26,8 @@ export const getCartItemsApi = async (cartIds:number[]) => {
         })
 
         if (response && response.status === 200) {
-            const data:Product[] = response.data
-            const cart = data.filter(item=>item.id&&cartIds.includes(item.id))
+            const data: Product[] = response.data
+            const cart = data.filter(item => item.id && cartIds.includes(item.id))
             return {
                 value: cart,
                 status: 200

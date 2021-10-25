@@ -24,7 +24,7 @@ const product: FC<Product> = ({ ...product }) => {
 
 export const getStaticProps: GetStaticProps = async (context) => {
     const productSlug = context.params?.product
-    const res = await fetch(process.env.PRODUCTS_API + "")
+    const res = await fetch(process.env.PRODUCTS_API + "/products")
     let products: Product[] = await res.json()
     const product = await products.filter((product) => product.slug === productSlug)[0]
     return {
@@ -35,7 +35,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const res = await fetch(process.env.PRODUCTS_API + "")
+    const res = await fetch(process.env.PRODUCTS_API + "/products")
     const products: Product[] = await res.json()
     const paths = products.map((product) => ({ params: { product: product.slug } }))
     return {

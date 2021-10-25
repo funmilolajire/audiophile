@@ -1,6 +1,7 @@
 import { FC, useState, useEffect } from 'react';
 import styles from './styles/detailtop.module.scss'
 import { useRouter } from 'next/router';
+import { useAppContext } from '../../contexts/context';
 
 const DetailTop: FC<DetailTop> = ({ ...props }) => {
     const router = useRouter()
@@ -18,21 +19,19 @@ const DetailTop: FC<DetailTop> = ({ ...props }) => {
         setAmount(1)
     }, [router.asPath])
 
-    const addToCart = () => {
-        const currentCart: { id: number, order_quantity: number }[] = JSON.parse(localStorage.getItem('cart') || '[]')
-        if (props.id && currentCart.map(item => item.id).includes(props.id)) {
-            const itemIndex = currentCart.findIndex(item => item.id === props.id)
-            if (itemIndex !== -1) {
-                currentCart[itemIndex] = { id: props.id, order_quantity: amount }
-            }
+    const [inCart, setInCart] = useState(false)
+    const { cartItems, addToCart } = useAppContext()
+
+    useEffect(() => {
+        const currentCartIds: string[] = cartItems.map(item => item.id)
+        if (props.id && currentCartIds.includes(props.id)) {
+            setInCart(true)
+        } else {
+            setInCart(false)
         }
-        else if (props.id) {
-            currentCart.push({ id: props.id, order_quantity: amount })
-        }
-        localStorage.setItem('cart', JSON.stringify(currentCart))
-    }
-    
-     return (
+    }, [cartItems])
+
+    return (
         <div className={styles.container}>
             <button onClick={router.back}>Go Back</button>
             <div className={styles.containerinner}>
@@ -45,14 +44,18 @@ const DetailTop: FC<DetailTop> = ({ ...props }) => {
                     {props.new && <span>new product</span>}
                     <h3>{props.name}</h3>
                     <p>{props.description}</p>
-                    <h4>$ {props.price}</h4>
+                    <h4>{props.price}</h4>
                     <div>
-                        <div className={styles.numberbox}>
-                            <button onClick={decrement}>-</button>
-                            <input onChange={changeAmount} type="text" value={amount} />
-                            <button onClick={increment}>+</button>
-                        </div>
-                        <button disabled={amount===0} onClick={addToCart} className={styles.addtocart}>Add to cart</button>
+                        {!inCart ? <>
+                            <div className={styles.numberbox}>
+                                <button onClick={decrement}>-</button>
+                                <input onChange={changeAmount} type="text" value={amount} />
+                                <button onClick={increment}>+</button>
+                            </div>
+                            <button disabled={amount === 0} onClick={() => addToCart(amount, props.id)} className={styles.addtocart}>Add to cart</button>
+                        </> :
+                            <button disabled className={styles.addtocart}>Item in cart</button>
+                        }
                     </div>
                 </section>
             </div>
