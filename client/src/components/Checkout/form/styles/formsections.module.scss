@@ -1,0 +1,76 @@
+.container {
+    &.shipping {
+        margin: 5.3rem 0 6.1rem;
+    }
+
+    h4 {
+        font-weight: 700;
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.928571px;
+        text-transform: uppercase;
+        color: #D87D4A;
+        margin-bottom: 1.6rem;
+    }
+
+    .inputscontainer {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+
+        .double {
+            display: flex;
+            gap: 1.6rem;
+
+            label {
+                font-weight: 700;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                letter-spacing: -0.214286px;
+                margin-bottom: 0.9rem;
+                color: #000;
+
+                &.error,
+                span {
+                    color: #cd2c2c;
+                }
+            }
+
+            .paymentmethod {
+                display: flex;
+                flex-direction: column;
+                gap: 1.6rem;
+            }
+
+            &>* {
+                width: 50%;
+            }
+        }
+    }
+
+    .payondelivery {
+        margin-top: 0.6rem;
+        display: flex;
+        align-items: center;
+        gap: 3.2rem;
+
+        figure {
+            width: 4.8rem;
+            height: 4.8rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        p {
+            width: 100%;
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            color: #000;
+            opacity: 0.5;
+        }
+    }
+}

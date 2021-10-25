@@ -18,7 +18,7 @@ html {
 
 body {
   scroll-behavior: smooth;
-  background: #fafafa;
+  background: #f1f1f1;
   position: relative;
 
   font: {
@@ -35,6 +35,10 @@ body {
   h6 {
     font-weight: 700;
     margin: 0;
+  }
+
+  button {
+    border: none;
   }
 }
 

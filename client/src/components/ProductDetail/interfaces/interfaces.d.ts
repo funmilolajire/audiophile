@@ -2,7 +2,7 @@ interface Products {
     products: Product[]
 }
 interface Product {
-    id?: number;
+    id?: string;
     slug: string;
     name: string;
     short?: string;
@@ -10,7 +10,7 @@ interface Product {
     category: string;
     categoryThumbnails: productImage;
     new: boolean;
-    price: number;
+    price: string;
     description: string;
     features: string;
     includes: {
@@ -36,11 +36,11 @@ interface productImage {
 }
 
 interface DetailTop {
-    id?: number;
+    id?: string;
     name: string;
     new: boolean;
     description: string;
-    price: number;
+    price: string;
     image: productImage;
 }
 

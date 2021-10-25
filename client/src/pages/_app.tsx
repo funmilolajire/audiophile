@@ -3,6 +3,7 @@ import '../styles/globals.scss'
 import Layout from '../components/Layout/Layout';
 import ProgressBar from "@badrap/bar-of-progress";
 import Router from "next/router";
+import { AppWrapper } from '../contexts/context';
 
 const progress = new ProgressBar({
   size: 2,
@@ -17,9 +18,11 @@ Router.events.on("routeChangeError", progress.finish);
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <AppWrapper>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </AppWrapper>
   )
 }
 

@@ -23,7 +23,7 @@ const category: FC<CategoryProducts> = ({ categoryProducts }) => {
 
 export const getStaticProps: GetStaticProps = async (context) => {
     const category = context.params?.category
-    const res = await fetch(process.env.PRODUCTS_API + "")
+    const res = await fetch(process.env.PRODUCTS_API + "/products")
     let products: Product[] = await res.json()
     const categoryProducts = products.filter((product) => product.category === category)
     return {
@@ -41,7 +41,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const res = await fetch(process.env.PRODUCTS_API + "")
+    const res = await fetch(process.env.PRODUCTS_API + "/products").then(response => response)
     const products: Product[] = await res.json()
     const categories = products.map((product) => ({ params: { category: product.category } }))
     const paths = [...categories]
