@@ -6,17 +6,19 @@ import styles from './styles/layout.module.scss';
 import Cart from '../Shared/Cart';
 
 const Layout: FC = ({ children }) => {
-    const [showCart,setShowCart]= useState(false)
+    const [showCart, setShowCart] = useState(false)
     return (
-    <div className={styles.container}>
-        <Header setShowCart={setShowCart} />
-        {showCart&& <Cart setShowCart={setShowCart} />}
-        <main>
-            {children}
-        </main>
-        <ScrollToTopButton />
-        <Footer />
-    </div>
-)}
+        <div className={styles.container}>
+
+            <Header setShowCart={setShowCart} />
+            {showCart && <Cart setShowCart={setShowCart} />}
+            <main>
+                {children}
+            </main>
+            <ScrollToTopButton />
+            <Footer />
+        </div>
+    )
+}
 
 export default Layout
