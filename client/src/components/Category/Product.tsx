@@ -9,10 +9,10 @@ const Product: FC<CategoryProduct & { index: number }> = ({ index, ...props }) =
         return flexDirection
     }
     return (
-        <div className={styles.container} style={{ flexDirection: getStyle() }}>
+        <div className={index !== 0 && index % 2 !== 0 ? `${styles.container} ${styles.reverse}` : styles.container}>
             {props.categoryThumbnails && <picture>
-                <source media="(max-width: 590px)" srcSet={props.categoryThumbnails.mobile} />
-                <source media="(max-width: 900px)" srcSet={props.categoryThumbnails.tablet} />
+                <source media="(max-width: 650px)" srcSet={props.categoryThumbnails.mobile} />
+                <source media="(max-width: 1100px)" srcSet={props.categoryThumbnails.tablet} />
                 <img src={props.categoryThumbnails.desktop} alt="category-product" />
             </picture>}
             <section>

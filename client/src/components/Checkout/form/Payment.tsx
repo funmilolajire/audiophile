@@ -12,7 +12,7 @@ const Payment = ({ formik }: { formik: FormikProps<FormValues> }) => {
             <h4>Payment Details</h4>
             <div className={styles.inputscontainer}>
                 <div className={styles.double}>
-                    <label htmlFor="paymentMethod">Payment Method</label>
+                    <label htmlFor="paymentMethod" className={styles.paymentlabel}>Payment Method</label>
                     <div className={styles.paymentmethod}>
                         {
                             ["e-Money", "Cash On Delivery"].map(type =>

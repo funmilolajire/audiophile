@@ -5,3 +5,19 @@
     justify-content: space-between;
     gap: 3rem;
 }
+
+@media all and (max-width:1100px) {
+    .container {
+        margin-bottom: 9.6rem;
+        gap: 1rem;
+    }
+}
+
+@media all and (max-width:650px) {
+    .container {
+        margin-bottom: 12rem;
+        gap: 6.8rem;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}

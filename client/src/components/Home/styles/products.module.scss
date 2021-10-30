@@ -6,3 +6,17 @@
     gap: 4.8rem;
     margin-bottom: 20rem;
 }
+
+@media all and (max-width:1100px) {
+    .container {
+        gap: 3.2rem;
+        margin-bottom: 9.6rem;
+    }
+}
+
+@media all and (max-width:650px) {
+    .container {
+        gap: 2.4rem;
+        margin-bottom: 12rem;
+    }
+}

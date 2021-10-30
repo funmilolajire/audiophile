@@ -6,8 +6,8 @@ const ProductZX9: FC = () => {
     return (
         <div className={styles.container}>
             <picture>
-                <source media="(max-width: 590px)" srcSet="https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621237036/audiophile/home/mobile/image-speaker-zx9_pgvhsb.png" />
-                <source media="(max-width: 900px)" srcSet="https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621237071/audiophile/home/tablet/image-speaker-zx9_nemkgl.png" />
+                <source media="(max-width: 650px)" srcSet="https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621237036/audiophile/home/mobile/image-speaker-zx9_pgvhsb.png" />
+                <source media="(max-width: 1100px)" srcSet="https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621237071/audiophile/home/tablet/image-speaker-zx9_nemkgl.png" />
                 <img src="https://res.cloudinary.com/funmilolajire/image/upload/q_100/v1621236932/audiophile/home/desktop/image-speaker-zx9_gyykq0.png" alt="product-zx9" />
             </picture>
             <section>
