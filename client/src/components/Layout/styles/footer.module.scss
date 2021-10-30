@@ -1,5 +1,5 @@
 .container {
-    margin-top: auto; //TODO remove
+    margin-top: auto;
     background: #101010;
     width: 100%;
     padding: 7.5rem 16.5rem 4.8rem;
@@ -91,5 +91,98 @@
         font-size: 1.5rem;
         line-height: 2.5rem;
         opacity: 0.5;
+    }
+}
+
+@media all and (max-width:1300px) {
+    .container {
+        padding: 7.5rem 10rem 4.8rem;
+    }
+}
+
+@media all and (max-width:1200px) {
+    .container {
+        padding: 7.5rem 8rem 4.8rem;
+    }
+}
+
+@media all and (max-width:1100px) {
+    .container {
+        padding: 6rem 4rem 4.6rem;
+        position: relative;
+
+        &>div:first-child {
+            margin-bottom: 3.2rem;
+            gap: 3.2rem;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        div:nth-child(2) {
+            margin-bottom: 8rem;
+            position: static;
+
+            p {
+                width: 100%;
+            }
+
+            .iconsDiv {
+                right: 4rem;
+                top: 0;
+                bottom: 0;
+                padding-bottom: 4.6rem;
+            }
+        }
+
+        small {
+            width: 70%;
+        }
+    }
+}
+
+@media all and (max-width:650px) {
+    .container {
+        padding: 5.2rem 2.4rem 3.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &>div:first-child {
+            margin-bottom: 4.8rem;
+            gap: 4.8rem;
+            align-items: center;
+
+            nav {
+                flex-direction: column;
+                gap: 1.6rem;
+            }
+        }
+
+        div:nth-child(2) {
+            margin-bottom: 4.8rem;
+            position: static;
+            text-align: center;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+
+            p {
+                width: 100%;
+            }
+
+            .iconsDiv {
+                top: 0;
+                bottom: 0;
+                right: 0;
+                margin: 0 auto;
+                padding-bottom: 3.8rem;
+            }
+        }
+
+        small {
+            margin-bottom: 11rem;
+            width: 100%;
+        }
     }
 }

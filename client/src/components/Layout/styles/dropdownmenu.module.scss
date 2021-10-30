@@ -1,0 +1,39 @@
+.container {
+    background: transparentize($color: #000000, $amount: 0.6);
+    position: fixed;
+    inset: 0;
+    top: 9rem;
+    z-index: 4500;
+    display: none;
+    min-height: 100vh;
+
+    .menu {
+        padding: 10.8rem 4rem 6.7rem;
+        border-radius: 0 0 8px 8px;
+        background: #fff;
+        overflow-y: auto;
+        position: relative;
+        z-index: 4501;
+
+        &>div {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media all and (max-width:1100px) {
+    .container {
+        display: block;
+    }
+}
+
+@media all and (max-width:650px) {
+    .container {
+        padding-bottom: 5rem;
+
+        .menu {
+            height: 100vh;
+            padding: 8.4rem 2.4rem 14.5rem;
+        }
+    }
+}

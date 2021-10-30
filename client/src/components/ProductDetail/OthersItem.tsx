@@ -6,8 +6,8 @@ const OthersItem: FC<OtherItem> = ({ slug, name, image }) => {
     return (
         <div className={styles.container}>
             <picture>
-                <source media="(max-width: 590px)" srcSet={image.mobile} />
-                <source media="(max-width: 900px)" srcSet={image.tablet} />
+                <source media="(max-width: 650px)" srcSet={image.mobile} />
+                <source media="(max-width: 1100px)" srcSet={image.tablet} />
                 <img src={image.desktop} alt="other-product" />
             </picture>
             <section>

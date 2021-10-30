@@ -74,3 +74,46 @@
         }
     }
 }
+
+@media all and (max-width:650px) {
+    .container {
+        &.shipping {
+            margin: 3.2rem 0;
+        }
+
+        .inputscontainer {
+            .double {
+                flex-direction: column;
+                gap: 2.4rem;
+
+                .paymentlabel {
+                    margin-bottom: -1.5rem;
+                }
+
+                .paymentmethod {
+                    gap: 1.6rem;
+                    margin-bottom: 0.6rem;
+                }
+
+                &>* {
+                    width: 100%;
+                }
+            }
+        }
+
+        .payondelivery {
+            margin-top: 0.6rem;
+            gap: 2.4rem;
+
+            figure {
+                width: 4.8rem;
+                height: 4.8rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+            }
+        }
+    }
+}

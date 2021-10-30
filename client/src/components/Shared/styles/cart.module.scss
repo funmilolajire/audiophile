@@ -111,3 +111,37 @@
         }
     }
 }
+
+@media all and (max-width:1300px) {
+    .container {
+        padding: 12.7rem 10rem 0;
+    }
+}
+
+@media all and (max-width:1200px) {
+    .container {
+        padding: 12.7rem 8rem 0;
+    }
+}
+
+
+@media all and (max-width:1100px) {
+    .container {
+        padding: 11.4rem 4rem 0;
+
+        .cartbox {
+            width: 60%;
+        }
+    }
+}
+
+@media all and (max-width:650px) {
+    .container {
+        padding: 11.4rem 2.4rem 0;
+
+        .cartbox {
+            width: 100%;
+            padding: 3.2rem 2.8rem;
+        }
+    }
+}

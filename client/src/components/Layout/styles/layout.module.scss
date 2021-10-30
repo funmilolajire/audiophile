@@ -12,3 +12,35 @@
         padding: 0 16.5rem;
     }
 }
+
+@media all and (max-width:1300px) {
+    .container {
+        main {
+            padding: 0 10rem;
+        }
+    }
+}
+
+@media all and (max-width:1200px) {
+    .container {
+        main {
+            padding: 0 8rem;
+        }
+    }
+}
+
+@media all and (max-width:1100px) {
+    .container {
+        main {
+            padding: 0 4rem;
+        }
+    }
+}
+
+@media all and (max-width:650px) {
+    .container {
+        main {
+            padding: 0 2.4rem;
+        }
+    }
+}

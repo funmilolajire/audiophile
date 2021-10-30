@@ -36,8 +36,8 @@ const DetailTop: FC<DetailTop> = ({ ...props }) => {
             <button onClick={router.back}>Go Back</button>
             <div className={styles.containerinner}>
                 <picture>
-                    <source media="(max-width: 590px)" srcSet={props.image.mobile} />
-                    <source media="(max-width: 900px)" srcSet={props.image.tablet} />
+                    <source media="(max-width: 650px)" srcSet={props.image.mobile} />
+                    <source media="(max-width: 1100px)" srcSet={props.image.tablet} />
                     <img src={props.image.desktop} alt="category-product" />
                 </picture>
                 <section>

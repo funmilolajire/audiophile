@@ -75,3 +75,80 @@
         }
     }
 }
+
+@media all and (max-width:1100px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6.4rem;
+        padding: 5.2rem 0 6.4rem;
+
+        &::before {
+            content: "";
+            background: url('https://res.cloudinary.com/funmilolajire/image/upload/v1621236932/audiophile/home/desktop/pattern-circles_cqzxzn.svg');
+            background-size: 115%;
+            background-repeat: no-repeat;
+            left: -10rem;
+            top: -28rem;
+        }
+
+        picture {
+            width: 19.7rem;
+            height: 23.7rem;
+            margin-bottom: -1%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        section {
+            text-align: center;
+            width: 50%;
+        }
+    }
+}
+
+@media all and (max-width:650px) {
+    .container {
+        gap: 3.2rem;
+        padding: 5.5rem 2.4rem;
+
+        &::before {
+            content: "";
+            background: url('https://res.cloudinary.com/funmilolajire/image/upload/v1621236932/audiophile/home/desktop/pattern-circles_cqzxzn.svg');
+            background-size: 125%;
+            background-repeat: no-repeat;
+            left: -12rem;
+            top: -13rem;
+        }
+
+        picture {
+            width: 17.2rem;
+            height: 20.7rem;
+            margin-bottom: -1%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        section {
+            text-align: center;
+            width: 100%;
+
+            h3 {
+                font-size: 3.6rem;
+                line-height: 4rem;
+                letter-spacing: 1.28571px;
+            }
+
+            p {
+                margin-bottom: 2.4rem;
+            }
+        }
+    }
+}
